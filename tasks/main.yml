@@ -1,18 +1,18 @@
 ---
-- include: install.yml
+- include_tasks: install.yml
   tags:
     - acme_sh_install
 
-- include: logging.yml
+- include_tasks: logging.yml
   tags:
     - acme_sh_logging
   when: acme_sh_logging
 
-- include: notify.yml
+- include_tasks: notify.yml
   tags:
     - acme_sh_notify
   when: acme_sh_notify
 
-- include: manage.yml
+- include_tasks: manage.yml
   tags:
     - acme_sh_manage
