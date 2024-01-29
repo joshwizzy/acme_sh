@@ -20,7 +20,7 @@
 
 - name: Clone acme.sh repository
   git:
-    repo: https://github.com/Neilpang/acme.sh.git
+    repo: https://github.com/acmesh-official/acme.sh.git
     dest: /usr/local/src/acme.sh
     version: "{{ acme_sh_git_version }}"
   register: git
